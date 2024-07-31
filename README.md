@@ -15,7 +15,7 @@ python manage.py migrate
 # 5) Запустить проект:
 python manage.py runserver
 
-### Примеры запросов к API: 
+### Примеры запросов к API:
 
 # 1) Запрос на создание публикации:
 http://127.0.0.1:8000/api/v1/posts/
