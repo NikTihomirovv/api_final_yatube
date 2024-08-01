@@ -8,3 +8,6 @@ Pillow==8.3.1
 PyJWT==2.1.0
 requests==2.26.0
 virtualenv==20.26.3
+django-filter==23.1
+djoser==2.1.0
+
