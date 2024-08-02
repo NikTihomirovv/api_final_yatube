@@ -3,17 +3,17 @@
 Это маленький учебный проект на тему API. В проекте созданы несколько моделей, сериализаторов и вьюсетов. Используются такие инструменты как Permissions, JWT-токены.
 ### Установка:
 # 1) Клонировать репозиторий:
-git clone https://github.com/NikTihomirovv/api_final_yatube
+```python git clone``` https://github.com/NikTihomirovv/api_final_yatube
 # 2) Развернуть виртуальное окружение и активировать его:
-python -m virtualenv venv
-python -m pip install --upgrade pip 
-venv/scripts/activate 
+```python python -m virtualenv venv```
+```python python -m pip install --upgrade pip ```
+```venv/scripts/activate ```
 # 3) Установить файл зависимостей:
-python -m pip install -r requirements.txt
+```python python -m pip install -r requirements.txt```
 # 4) Выполнить миграции:
-python manage.py migrate
+```python python manage.py migrate```
 # 5) Запустить проект:
-python manage.py runserver
+```python python manage.py runserver```
 
 ### Примеры запросов к API:
 

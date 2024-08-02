@@ -6,7 +6,7 @@ from rest_framework.permissions import (
     IsAuthenticatedOrReadOnly
 )
 
-from api.permissions import IsAuthorOrReadOnly, ReadOnly
+from api.permissions import IsAuthorOrReadOnly
 from api.serializers import (
     CommentSerializer,
     FollowSerializer,
@@ -24,11 +24,6 @@ class PostViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
-
-    def get_permissions(self):
-        if self.action == 'retrieve':
-            return (ReadOnly(),)
-        return super().get_permissions()
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
